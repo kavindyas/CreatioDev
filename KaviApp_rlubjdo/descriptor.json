@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "d808e56d-3fc8-4fd3-98e6-93ecace43ddd",
+    "Name": "KaviApp_rlubjdo",
+    "Type": 1,
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/KaviApp_rlubjdo.csproj",
+    "DependsOn": []
+  }
+}

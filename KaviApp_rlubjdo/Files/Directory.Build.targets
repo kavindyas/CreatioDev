@@ -1,0 +1,19 @@
+<Project>
+	<ItemGroup Condition="'$(PkgPath)' != ''">
+		<Compile Remove="$(PkgPath)/KaviApp_rlubjdo/Assemblies/**" />
+		<Compile Remove="$(PkgPath)/KaviApp_rlubjdo/Data/**" />
+		<Compile Remove="$(PkgPath)/KaviApp_rlubjdo/SqlScripts/**" />
+		<Compile Remove="$(PkgPath)/KaviApp_rlubjdo/Schemas\**" />
+		<Compile Remove="$(PkgPath)/KaviApp_rlubjdo/Resources/**" />
+		<EmbeddedResource Remove="$(PkgPath)/KaviApp_rlubjdo/Assemblies/**" />
+		<EmbeddedResource Remove="$(PkgPath)/KaviApp_rlubjdo/Data/**" />
+		<EmbeddedResource Remove="$(PkgPath)/KaviApp_rlubjdo/SqlScripts/**" />
+		<EmbeddedResource Remove="$(PkgPath)/KaviApp_rlubjdo/Schemas/**" />
+		<EmbeddedResource Remove="$(PkgPath)/KaviApp_rlubjdo/Resources/**" />
+		<None Remove="$(PkgPath)/KaviApp_rlubjdo/Assemblies/**" />
+		<None Remove="$(PkgPath)/KaviApp_rlubjdo/Data/**" />
+		<None Remove="$(PkgPath)/KaviApp_rlubjdo/SqlScripts/**" />
+		<None Remove="$(PkgPath)/KaviApp_rlubjdo/Schemas/**" />
+		<None Remove="$(PkgPath)/KaviApp_rlubjdo/Resources/**" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "54397a15-3a28-4424-9141-551f0bfeb184",
+    "Name": "KaviDummyProcess",
+    "ModifiedOnUtc": "\/Date(1687322874000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "My Dummy process",
+    "DependsOn": []
+  }
+}

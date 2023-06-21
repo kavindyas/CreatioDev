@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "cc59a00d-78e7-49ca-a240-de87513efa24",
+    "Name": "UsrApp_uzjtpis",
+    "Type": 1,
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/UsrApp_uzjtpis.csproj",
+    "DependsOn": []
+  }
+}
