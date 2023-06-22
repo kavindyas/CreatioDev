@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "e202b12f-5d0b-4181-a26e-c08349af2be9",
+    "Name": "KaviVwContactAgeDays",
+    "ModifiedOnUtc": "\/Date(1687418406000)\/",
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "KaviVwContactAgeDays",
+    "DependsOn": []
+  }
+}
