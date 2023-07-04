@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "9115569b-1d49-4aaf-b66b-73d7af1349d5",
+    "Name": "KaviRealtyClassicFolder",
+    "ModifiedOnUtc": "\/Date(1687927914000)\/",
+    "Parent": {
+      "UId": "d602bf96-d029-4b07-9755-63c8f5cb5ed5",
+      "Name": "BaseFolder"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Classic folder",
+    "DependsOn": []
+  }
+}

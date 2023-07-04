@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "05e0c3f6-7920-4080-9e92-c0769af21a06",
+    "Name": "KaviRealty_ListPage",
+    "ModifiedOnUtc": "\/Date(1687517888000)\/",
+    "Parent": {
+      "UId": "3f1f3f38-a0a4-4549-b895-249fb08f554a",
+      "Name": "ListFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Realty list page",
+    "DependsOn": []
+  }
+}

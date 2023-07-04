@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty Visit (Freedom UI)" />
+			<Item Name="Columns.KaviComment.Caption" Value="Comment" />
+			<Item Name="Columns.KaviManager.Caption" Value="Manager" />
+			<Item Name="Columns.KaviParentRealty.Caption" Value="Parent Realty" />
+			<Item Name="Columns.KaviPotentialCustomer.Caption" Value="Potential customer" />
+			<Item Name="Columns.KaviVisitDateTime.Caption" Value="Visit date and time" />
+		</Items>
+	</Group>
+</Resources>

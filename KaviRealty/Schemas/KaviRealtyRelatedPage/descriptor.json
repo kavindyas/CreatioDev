@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "50d757cd-6aab-44c0-90ba-74c9ce88f4aa",
+    "Name": "KaviRealtyRelatedPage",
+    "ModifiedOnUtc": "\/Date(1687430886000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Realty (Page settings)",
+    "DependsOn": []
+  }
+}

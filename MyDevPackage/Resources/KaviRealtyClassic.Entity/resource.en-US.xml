@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty Classic" />
+			<Item Name="Columns.KaviArea.Caption" Value="Area sqft" />
+			<Item Name="Columns.KaviComment.Caption" Value="Comment" />
+			<Item Name="Columns.KaviCommissionUSD.Caption" Value="Commission USD" />
+			<Item Name="Columns.KaviManager.Caption" Value="Manager" />
+			<Item Name="Columns.KaviName.Caption" Value="Name" />
+			<Item Name="Columns.KaviNotes.Caption" Value="Notes" />
+			<Item Name="Columns.KaviOfferType.Caption" Value="Offer type" />
+			<Item Name="Columns.KaviPriceUSD.Caption" Value="Price USD" />
+			<Item Name="Columns.KaviType.Caption" Value="Type" />
+		</Items>
+	</Group>
+</Resources>

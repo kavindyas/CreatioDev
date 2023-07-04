@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "7da5a8de-37a3-48f4-89a5-506555d9473e",
+    "Name": "KaviApp_ld1vcgm",
+    "Type": 1,
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/KaviApp_ld1vcgm.csproj",
+    "DependsOn": []
+  }
+}

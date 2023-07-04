@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "32d8f572-37d0-43a3-b914-8c4507e0ca9b",
+    "Name": "KaviRealtyClassicInTag",
+    "ModifiedOnUtc": "\/Date(1687927933000)\/",
+    "Parent": {
+      "UId": "5894a2b0-51d5-419a-82bb-238674634270",
+      "Name": "BaseEntityInTag"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Classic section record tag",
+    "DependsOn": []
+  }
+}

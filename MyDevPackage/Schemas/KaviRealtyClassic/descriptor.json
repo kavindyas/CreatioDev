@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "9e13ef6d-c6b7-44d7-a428-6d5045bcdcc5",
+    "Name": "KaviRealtyClassic",
+    "ModifiedOnUtc": "\/Date(1688117714000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Classic",
+    "DependsOn": []
+  }
+}

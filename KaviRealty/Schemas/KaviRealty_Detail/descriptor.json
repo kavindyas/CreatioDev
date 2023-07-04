@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "18b0ff0b-c2cb-4f77-959c-3739f93f6d8d",
+    "Name": "KaviRealty_Detail",
+    "ModifiedOnUtc": "\/Date(1687430886000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Realty detail",
+    "DependsOn": []
+  }
+}

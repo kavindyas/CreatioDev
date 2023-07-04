@@ -1,0 +1,29 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "11d0a689-21d5-47b5-859d-553874be9932",
+      "A2": "KaviRealtyVisitRelatedPage",
+      "A5": "6f081987-d817-44b8-aca2-f56fe376a79b",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "86723763-ecee-4008-8dc2-748e3f5a5b53",
+      "B8": "8.0.8.4807",
+      "AD1": "bb1454ea-e492-496f-98ae-f0a23883f9cb",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+  "Pages": [
+    {
+      "UId": "f8665c50-4f52-7f19-7b1d-a190e1eeea5c",
+      "PageSchemaUId": "053addf6-d0ef-4c99-b739-f35a9d92baa8",
+      "IsDefault": true,
+      "IsSspDefault": false
+    }
+  ]
+}
+    }
+  }
+}

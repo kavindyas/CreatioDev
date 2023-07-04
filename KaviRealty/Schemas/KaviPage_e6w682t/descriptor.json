@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "053addf6-d0ef-4c99-b739-f35a9d92baa8",
+    "Name": "KaviPage_e6w682t",
+    "ModifiedOnUtc": "\/Date(1687860438000)\/",
+    "Parent": {
+      "UId": "ecdcc8ff-272c-4957-9381-7d74ce17e140",
+      "Name": "BaseMiniPageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Realty Visit (Freedom UI) modal page",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "a425c799-a99b-442a-aad0-2675c6b192dd",
+    "Name": "KaviRealty_FormPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1687519450000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Realty form page (Business rules)",
+    "DependsOn": []
+  }
+}

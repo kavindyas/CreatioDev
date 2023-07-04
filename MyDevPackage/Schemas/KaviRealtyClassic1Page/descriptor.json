@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "f99931f2-6893-4cb2-b069-aeabae08a4f3",
+    "Name": "KaviRealtyClassic1Page",
+    "ModifiedOnUtc": "\/Date(1688444441000)\/",
+    "Parent": {
+      "UId": "d62293c0-7f14-44b1-b547-735fb40499cd",
+      "Name": "BaseModulePageV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Edit page: \"Realty Classic\""
+  }
+}
