@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "a6069f45-1d14-4e40-8924-e402e0df4229",
+    "Name": "KaviRealtyVisitClassicDetailGrid",
+    "ModifiedOnUtc": "\/Date(1688461332000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Detail schema: \"Realty visit (Classic)\""
+  }
+}

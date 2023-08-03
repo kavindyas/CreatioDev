@@ -1,4 +1,4 @@
-define("KaviRealtyClassic1Page", [], function() {
+define("KaviRealtyClassic1Page", ["ServiceHelper"], function(ServiceHelper) {
 	return {
 		entitySchemaName: "KaviRealtyClassic",
 		attributes: {
@@ -25,6 +25,14 @@ define("KaviRealtyClassic1Page", [], function() {
 				"filter": {
 					"masterColumn": "Id",
 					"detailColumn": "KaviRealtyClassic"
+				}
+			},
+			"KaviSchemaef62a7ebDetail43391709": {
+				"schemaName": "KaviRealtyVisitClassicDetailGrid",
+				"entitySchemaName": "KaviRealtyVisitClassic",
+				"filter": {
+					"detailColumn": "KaviParentRealty",
+					"masterColumn": "Id"
 				}
 			}
 		}/**SCHEMA_DETAILS*/,
@@ -72,6 +80,30 @@ define("KaviRealtyClassic1Page", [], function() {
 				this.addColumnValidator("KaviPriceUSD", this.positiveValueValidator);
 				this.addColumnValidator("KaviArea", this.positiveValueValidator);
 			},
+			onRunWebServiceButtonClick: function() {
+				var typeObject = this.get("KaviType");
+				if (!typeObject) {
+					return;
+				}
+				var typeId = typeObject.value;
+				var offerTypeObject = this.get("KaviOfferType");
+				if (!offerTypeObject) {
+					return;
+				}
+				var offerTypeId = offerTypeObject.value;
+				var params = {
+					realtyTypeId: typeId,
+					realtyOfferTypeId: offerTypeId,
+					entityName: "KaviRealtyClassic"
+				};				
+				this.console.log("1");
+				ServiceHelper.callService("RealtyService", "GetTotalAmountByTypeId", this.getWebServiceResult, params, this);
+				this.console.log("2");
+			},
+			getWebServiceResult: function(response, success) {
+				this.console.log("3");
+				this.Terrasoft.showInformation("Total amount by typeId: " + response.GetTotalAmountByTypeIdResult);
+			}
 		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
@@ -131,10 +163,28 @@ define("KaviRealtyClassic1Page", [], function() {
 			},
 			{
 				"operation": "insert",
-				"name": "MyButton",
+				"name": "FLOAT8ea60522-c8c2-482c-ad6a-1f1700c42359",
 				"values": {
 					"layout": {
 						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 3,
+						"layoutName": "ProfileContainer"
+					},
+					"bindTo": "KaviCommissionUSD",
+					"enabled": false
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "MyButton",
+				"values": {
+					"layout": {
+						"colSpan": 8,
 						"rowSpan": 1,
 						"column": 0,
 						"row": 4,
@@ -154,25 +204,31 @@ define("KaviRealtyClassic1Page", [], function() {
 				},
 				"parentName": "ProfileContainer",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
 			},
 			{
 				"operation": "insert",
-				"name": "FLOAT8ea60522-c8c2-482c-ad6a-1f1700c42359",
+				"name": "RunWebServiceButton",
 				"values": {
 					"layout": {
-						"colSpan": 24,
+						"colSpan": 12,
 						"rowSpan": 1,
-						"column": 0,
-						"row": 3,
+						"column": 8,
+						"row": 4,
 						"layoutName": "ProfileContainer"
 					},
-					"bindTo": "KaviCommissionUSD",
-					"enabled": false
+					"itemType": 5,
+					"caption": {
+						"bindTo": "Resources.Strings.RunWSButtonCaption"
+					},
+					"click": {
+						"bindTo": "onRunWebServiceButtonClick"
+					},
+					"style": "red"
 				},
 				"parentName": "ProfileContainer",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -252,10 +308,10 @@ define("KaviRealtyClassic1Page", [], function() {
 			},
 			{
 				"operation": "insert",
-				"name": "NotesAndFilesTab",
+				"name": "Tabea461a51TabLabel",
 				"values": {
 					"caption": {
-						"bindTo": "Resources.Strings.NotesAndFilesTabCaption"
+						"bindTo": "Resources.Strings.Tabea461a51TabLabelTabCaption"
 					},
 					"items": [],
 					"order": 0
@@ -263,6 +319,31 @@ define("KaviRealtyClassic1Page", [], function() {
 				"parentName": "Tabs",
 				"propertyName": "tabs",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "KaviSchemaef62a7ebDetail43391709",
+				"values": {
+					"itemType": 2,
+					"markerValue": "added-detail"
+				},
+				"parentName": "Tabea461a51TabLabel",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "NotesAndFilesTab",
+				"values": {
+					"caption": {
+						"bindTo": "Resources.Strings.NotesAndFilesTabCaption"
+					},
+					"items": [],
+					"order": 1
+				},
+				"parentName": "Tabs",
+				"propertyName": "tabs",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -320,7 +401,7 @@ define("KaviRealtyClassic1Page", [], function() {
 				"operation": "merge",
 				"name": "ESNTab",
 				"values": {
-					"order": 1
+					"order": 2
 				}
 			}
 		]/**SCHEMA_DIFF*/

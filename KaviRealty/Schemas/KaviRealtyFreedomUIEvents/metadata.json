@@ -1,0 +1,24 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "SourceCodeSchemaManager",
+      "UId": "d3e1cedf-29f4-4e54-a68a-e506f1a291b2",
+      "A2": "KaviRealtyFreedomUIEvents",
+      "A5": "6f081987-d817-44b8-aca2-f56fe376a79b",
+      "B1": [],
+      "B2": [
+        {
+          "UId": "05880815-9ee7-6a28-aae9-0f7063ef55e6",
+          "A2": "ValueIsTooBig",
+          "A3": "d3e1cedf-29f4-4e54-a68a-e506f1a291b2",
+          "A4": "d3e1cedf-29f4-4e54-a68a-e506f1a291b2",
+          "A5": "6f081987-d817-44b8-aca2-f56fe376a79b"
+        }
+      ],
+      "B3": [],
+      "B6": "86723763-ecee-4008-8dc2-748e3f5a5b53",
+      "B8": "8.0.8.4807",
+      "HD1": "50e3acc0-26fc-4237-a095-849a1d534bd3"
+    }
+  }
+}

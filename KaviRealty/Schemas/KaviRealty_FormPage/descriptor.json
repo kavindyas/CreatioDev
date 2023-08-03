@@ -2,13 +2,12 @@
   "Descriptor": {
     "UId": "0ac153cd-5b1b-46a7-b86a-1c879add5bc4",
     "Name": "KaviRealty_FormPage",
-    "ModifiedOnUtc": "\/Date(1687862912000)\/",
+    "ModifiedOnUtc": "\/Date(1690801573000)\/",
     "Parent": {
       "UId": "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9",
       "Name": "PageWithTabsFreedomTemplate"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Realty form page",
-    "DependsOn": []
+    "Caption": "Realty form page"
   }
 }

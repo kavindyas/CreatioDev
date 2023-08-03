@@ -1,4 +1,4 @@
-define("KaviRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("KaviRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -51,6 +51,88 @@ define("KaviRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
+				"name": "Button_kpgj19a",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_kpgj19a_caption)#",
+					"color": "primary",
+					"disabled": false,
+					"size": "medium",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"clicked": {
+						"request": "kavi.RunWebServiceButtonRequest"
+					},
+					"clickMode": "default",
+					"icon": "relationship-button-icon"
+				},
+				"parentName": "CardToggleContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Button_b16vipb",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_b16vipb_caption)#",
+					"color": "warn",
+					"disabled": false,
+					"size": "medium",
+					"iconPosition": "only-text",
+					"visible": true,
+					"clicked": {},
+					"clickMode": "menu",
+					"menuItems": []
+				},
+				"parentName": "CardToggleContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItem_1dpc6a9",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_1dpc6a9_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "KaviAddRealtyVisitsProcess",
+							"processRunType": "ForTheSelectedPage",
+							"recordIdProcessParameterName": "RealtyIdParameter"
+						}
+					},
+					"icon": "box-icon"
+				},
+				"parentName": "Button_b16vipb",
+				"propertyName": "menuItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItem_elyvc8i",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_elyvc8i_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "KaviCalcRealtyAvgPriceProcess",
+							"processRunType": "ForTheSelectedPage",
+							"recordIdProcessParameterName": "ProcessSchemaParameter1"
+						}
+					},
+					"icon": "calculator-button-icon"
+				},
+				"parentName": "Button_b16vipb",
+				"propertyName": "menuItems",
+				"index": 1
+			},
+			{
+				"operation": "insert",
 				"name": "MyButton",
 				"values": {
 					"type": "crt.Button",
@@ -68,7 +150,7 @@ define("KaviRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				},
 				"parentName": "CardToggleContainer",
 				"propertyName": "items",
-				"index": 0
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -748,6 +830,50 @@ define("KaviRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			}
 		}/**SCHEMA_MODEL_CONFIG*/,
 		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "kavi.RunWebServiceButtonRequest",
+				/* Implementation of the custom query handler. */
+				handler: async (request, next) => {
+					this.console.log("Run web service button works...");
+
+					var typeObject = await request.$context.LookupAttribute_8v2eg92;
+					var typeId = "";
+					if (typeObject) {
+						typeId = typeObject.value;
+					}
+					// get id from type lookup type object
+
+					var offerTypeObject = await request.$context.LookupAttribute_b5g0e75;
+					var offerTypeId = "";
+					if (offerTypeObject) {
+						offerTypeId = offerTypeObject.value;
+					}
+					// get id from type lookup offer type object
+
+					/* Create an instance of the HTTP client from @creatio-devkit/common. */
+					const httpClientService = new sdk.HttpClientService();
+
+					/* Specify the URL to retrieve the current rate. Use the coindesk.com external service. */
+					const baseUrl = Terrasoft.utils.uri.getConfigurationWebServiceBaseUrl();
+					const transferName = "rest";
+					const serviceName = "RealtyService";
+					const methodName = "GetTotalAmountByTypeId";
+					const endpoint = Terrasoft.combinePath(baseUrl, transferName, serviceName, methodName);
+					//const endpoint = "http://localhost/D5_8.0.8.4758/0/rest/RealtyService/GetTotalAmountByTypeId";
+					/* Send a POST HTTP request. The HTTP client converts the response body from JSON to a JS object automatically. */
+					var params = {
+						realtyTypeId: typeId,
+						realtyOfferTypeId: offerTypeId,
+						entityName: "KaviRealty"
+					};
+					const response = await httpClientService.post(endpoint, params);
+					
+					this.console.log("response total price = " + response.body.GetTotalAmountByTypeIdResult);
+					
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			},
 			{
 				request: "Kavi.MyButtonRequest",
 				/* Implementation of the custom query handler. */

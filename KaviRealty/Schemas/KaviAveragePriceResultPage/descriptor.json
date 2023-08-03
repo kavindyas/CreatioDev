@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "eff754b6-52fa-45d2-9328-0608b605de32",
+    "Name": "KaviAveragePriceResultPage",
+    "ModifiedOnUtc": "\/Date(1690367302000)\/",
+    "Parent": {
+      "UId": "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9",
+      "Name": "PageWithTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Average price result page"
+  }
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "b9fa9579-4d0c-4055-ae69-587c35e4e85a",
+    "Name": "KaviRealtyVisitClassic",
+    "ModifiedOnUtc": "\/Date(1688457730000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty visit (Classic)",
+    "DependsOn": []
+  }
+}

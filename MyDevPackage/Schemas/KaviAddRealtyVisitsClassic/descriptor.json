@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "849a93ca-27b9-4f4e-beb0-ba36dbe769d5",
+    "Name": "KaviAddRealtyVisitsClassic",
+    "ModifiedOnUtc": "\/Date(1688467302000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Add realty visits (Classic) process",
+    "DependsOn": []
+  }
+}
